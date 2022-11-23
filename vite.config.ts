@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, './src/lib/index.ts'),
-      name: 'vue-number-increment',
-      fileName: (format) => `build.${format}.ts`
+      name: 'VueNumberIncrement',
+      fileName: 'index'
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

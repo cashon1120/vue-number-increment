@@ -1,6 +1,6 @@
 # Vue3 Number Increment
 
-基于vue3的一个数字增长的动画组件
+基于vue3(version > 3.2.4)的一个数字增长的动画组件
 
 ### 安装
 `npm install vue-number-increment`  

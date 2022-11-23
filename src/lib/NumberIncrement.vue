@@ -1,7 +1,7 @@
 <template>
-  {{ count }}
+  <div>1: {{ count }}</div>
 </template>
-<script lang="ts" setup name="IncrementNumber">
+<script lang="ts" setup name="NumberIncrement">
 import { ref, onMounted, watch } from "vue";
 interface Props {
   to: number | string;

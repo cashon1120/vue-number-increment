@@ -1,2 +1,2 @@
 import NumberIncrement from "./NumberIncrement.vue";
-export { NumberIncrement };
+export default NumberIncrement;

@@ -10,6 +10,8 @@
       "require": "./dist/build.umd.ts"
     }
   },
+  "repository": "https://github.com/cashon1120/vue-number-increment",
+  "homepage": "https://github.com/cashon1120/vue-number-increment",
   "keywords": [
     "vue3",
     "number",

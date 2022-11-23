@@ -3,14 +3,14 @@
 基于vue3的一个数字增长的动画组件
 
 ### 安装
-`npm install vue-number-increment`
-或
+`npm install vue-number-increment`  
+或  
 `yarn add vue-number-increment`
 
 ### 使用
 ```javascript 
 import {ref} from 'vue'
-import VueNumberIncrement from 'vue-number-increment'
+import NumberIncrement from 'vue-number-increment'
 
 const number = ref(9527)
 const handleIncrementEnd = (endValue: number) => {
@@ -20,6 +20,6 @@ const handleIncrementEnd = (endValue: number) => {
 // speed: 增长速度, 1-10;
 // callback: 动画完成后回调
 <template>
-    <VueNumberIncrement :to={number} :speed="5" @callback="handleIncrementEnd" />
+    <NumberIncrement :to={number} :speed="5" @callback="handleIncrementEnd" />
 </template>
 ```

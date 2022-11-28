@@ -1,25 +1,27 @@
-# Vue3 Number Increment
+# Number Increment Animation
 
-基于vue3(version > 3.2.4)的一个数字增长的动画组件
+Vue(version > 3.2.4) number increment animation component
 
-### 安装
+### install
 `npm install vue-number-increment`  
-或  
+or  
 `yarn add vue-number-increment`
 
-### 使用
+[DEMO](https://increment.hi515.cn)
+### use
 ```javascript 
 import {ref} from 'vue'
 import NumberIncrement from 'vue-number-increment'
 
-const number = ref(9527)
+const number = ref(128)
+const speed=ref(5)
+
 const handleIncrementEnd = (endValue: number) => {
-    console.log('动画已完成', endValue)
+    console.log('animation end', endValue)
 }
-// to: 目标数字
-// speed: 增长速度, 1-10;
-// callback: 动画完成后回调
+// to: target number(value must be a number)
+// speed: animation speed(1-10) and default value is 5;
 <template>
-    <NumberIncrement :to={number} :speed="5" @callback="handleIncrementEnd" />
+    <NumberIncrement :to="number" :speed="speed" @callback="handleAnimationEnd" />
 </template>
 ```

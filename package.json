@@ -1,16 +1,16 @@
 {
   "name": "vue-number-increment",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "type": "module",
   "files": [
-    "dist"
+    "lib"
   ],
-  "module": "./dist/index.js",
-  "main": "./dist/index.umd.cjs",
+  "module": "./lib/index.js",
+  "main": "./lib/index.umd.cjs",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "import": "./lib/index.js",
+      "require": "./lib/index.umd.cjs"
     }
   },
   "repository": "https://github.com/cashon1120/vue-number-increment",
@@ -24,12 +24,12 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build --config vite.config.demo.ts",
+    "buildlib": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.41",
-    "vue-number-increment": "file:vue-number-increment-0.1.0.tgz"
+    "vue": "^3.2.41"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",

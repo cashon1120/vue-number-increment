@@ -7,11 +7,14 @@
     "strict": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    // 单元测试的支持
+    "types": ["vitest/globals"],
+    // 解决测试文件中的 '--isolatedModules'报错
+    "isolatedModules": false
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/lib/index.js", "src/lib/index.js"],
   "references": [{ "path": "./tsconfig.node.json" }]

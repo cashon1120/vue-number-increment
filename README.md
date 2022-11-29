@@ -1,6 +1,6 @@
 # Number Increment Animation
 
-Vue(version > 3.2.4) number increment animation component
+Vue(version >= 3.2.4) number increment animation component
 
 ### install
 `npm install vue-number-increment`  

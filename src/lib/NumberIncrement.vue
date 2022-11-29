@@ -27,7 +27,7 @@ let animation: any = null;
 // 计算每次递增量
 const setStep = (to: number) => {
   const propSpeed = checkIsNumber(props.speed, "speed");
-  const speed = props.speed ? 12 - Math.min(10, propSpeed) : 5;
+  const speed = propSpeed ? 12 - Math.max(1, Math.min(10, propSpeed)) : 5;
   return Math.floor((to - count.value) / (speed * 10));
 };
 // 增加数值，小数点根据to或者count.value本来的小数点位置来设置

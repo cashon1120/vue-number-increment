@@ -2,11 +2,11 @@
 import { ref } from "vue";
 import NumberIncrement from "./lib/index";
 
-const number = ref(128);
-const speed = ref(5)
+const number = ref(0);
+const speed = ref(10)
 
 const handleAnimationEnd = (endValue: number) => {
-  console.log('动画结束', endValue);
+  console.log('animation end', endValue);
 };
 const handlIncrement = () => {
   number.value += 128;
@@ -26,15 +26,15 @@ const change = (e: any) => {
       speed: &nbsp;<input min="1" max="10" :value="speed" id="range" @input="change" type="range" /> &nbsp;<span>{{speed}}</span>
     </div>
     <div class="wrapper">
-      <button @click="handlReduction">-</button>
-      <div class="count">
+      <button @click="handlReduction" data-testid="reduction">-</button>
+      <div class="count" data-testid="number">
         <NumberIncrement
           :to="number"
           :speed="speed"
           @callback="handleAnimationEnd"
         />
       </div>
-      <button @click="handlIncrement">+</button>
+      <button @click="handlIncrement" data-testid="increment">+</button>
     </div>
   </div>
 </template>

@@ -16,7 +16,7 @@ import NumberIncrement from 'vue-number-increment'
 const number = ref(128)
 const speed=ref(5)
 
-const handleIncrementEnd = (endValue: number) => {
+const handleAnimationEnd = (endValue: number) => {
     console.log('animation end', endValue)
 }
 // to: target number(value must be a number)
